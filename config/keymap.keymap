@@ -133,10 +133,10 @@
         };       // O+P+BS → タブを閉じる
         minimize {
             timeout-ms = <50>;
-            key-positions = <33 34 35 36>;
+            key-positions = <33 34 35>;
             bindings = <&kp LG(M)>;
             layers = <0 1 6>;
-        };   // M+,+./ → 最小化
+        };   // M+,+. → 最小化
         back {
             timeout-ms = <50>;
             key-positions = <32 33 34>;
