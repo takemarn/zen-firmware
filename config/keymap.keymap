@@ -140,13 +140,13 @@
         back {
             timeout-ms = <50>;
             key-positions = <32 33 34>;
-            bindings = <&kp LG(NON_US_HASH)>;
+            bindings = <&kp LG(RBKT)>;
             layers = <0 1 6>;
         }; // N+M+,
         forward {
             timeout-ms = <50>;
             key-positions = <34 35 36>;
-            bindings = <&kp LG(RBKT)>;
+            bindings = <&kp LG(NON_US_HASH)>;
             layers = <0 1 6>;
         };   // ,+./
         // ---- ⌃⌥ 系（ウインドウ配置など）----
