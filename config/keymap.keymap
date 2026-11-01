@@ -140,13 +140,13 @@
         back {
             timeout-ms = <50>;
             key-positions = <32 33 34>;
-            bindings = <&kp LG(LBKT)>;
+            bindings = <&kp LG(RBKT)>;
             layers = <0 1 6>;
         }; // N+M+,
         forward {
             timeout-ms = <50>;
             key-positions = <34 35 36>;
-            bindings = <&kp LG(RBKT)>;
+            bindings = <&kp LG(NON_US_HASH)>;
             layers = <0 1 6>;
         };   // ,+./
         // ---- ⌃⌥ 系（ウインドウ配置など）----
@@ -213,7 +213,7 @@
             display-name = "Mouse";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans     &trans               &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LBKT)  &kp LG(R)  &kp LG(RBKT)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(RBKT)  &kp LG(R)  &kp LG(NON_US_HASH)  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mo 4  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans     &trans               &trans     &trans
             >;
@@ -263,7 +263,7 @@
             display-name = "MouseLock";
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans     &trans               &trans     &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(LBKT)  &kp LG(R)  &kp LG(RBKT)  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &kp LG(RBKT)  &kp LG(R)  &kp LG(NON_US_HASH)  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &mkp LCLK  &mkp RCLK  &mo 4  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans        &trans     &trans               &trans     &trans
             >;
