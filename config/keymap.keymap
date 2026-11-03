@@ -63,8 +63,20 @@
             bindings = <&mo 4>;
             layers = <0 1>;
         };   // ,+. → 押している間スクロール
-        reload {
+        back {
             timeout-ms = <50>;
+            key-positions = <18 19>;
+            bindings = <&kp LG(RBKT)>;
+            layers = <0 1>;
+        };   // H+J → 戻る（JIS）
+        forward {
+            timeout-ms = <50>;
+            key-positions = <20 21>;
+            bindings = <&kp LG(NON_US_HASH)>;
+            layers = <0 1>;
+        };   // K+L → 進む（JIS）
+        reload {
+            timeout-ms = <100>;
             key-positions = <46 47>;
             bindings = <&kp LG(R)>;
             layers = <0 1>;
@@ -159,18 +171,6 @@
             bindings = <&kp LG(M)>;
             layers = <0 1>;
         };   // M+,+. → 最小化
-        back {
-            timeout-ms = <50>;
-            key-positions = <32 33 34>;
-            bindings = <&kp LG(RBKT)>;
-            layers = <0 1>;
-        }; // N+M+,
-        forward {
-            timeout-ms = <50>;
-            key-positions = <34 35 36>;
-            bindings = <&kp LG(NON_US_HASH)>;
-            layers = <0 1>;
-        };   // ,+./
         // ---- ⌃⌥ 系（ウインドウ配置など）----
 
         cae_enter {
@@ -277,7 +277,7 @@
 &kp F1        &kp F2        &kp F3        &kp F4        &kp F5        &kp F6  &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
 &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans   &trans   &trans
 &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans   &trans   &trans  &trans  &trans
-&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_USB  &out OUT_BLE  &trans  &trans  &trans   &trans   &trans
+&bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &out OUT_USB  &out OUT_BLE  &trans  &kp LG(R)  &trans  &trans  &trans
             >;
         };
     };
